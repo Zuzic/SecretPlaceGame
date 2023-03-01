@@ -1,0 +1,8 @@
+// sourcery: ModuleDependecy = "SecretPlaceGame{{ argument.moduleName }}"
+public protocol {{ argument.moduleName }}ModuleDependency {
+    var settings: {{ argument.moduleName }}ModuleSettings { get }
+}
+
+// sourcery: ModuleSettings = "SecretPlaceGame{{ argument.moduleName }}"
+public protocol {{ argument.moduleName }}ModuleSettings: AnyObject {
+}

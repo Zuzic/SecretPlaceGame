@@ -1,0 +1,17 @@
+sources:
+  include:
+    - ./SecretPlaceGameApp/
+  exclude:
+    - ./SecretPlaceGameApp/Generated/
+
+templates:
+  - ./Utils/Sourcery/
+
+forceParse:
+  - UnwrapModuleOutputs
+
+output:
+  ./SecretPlaceGameApp/Generated/
+
+args:
+  injectorName: Injector

@@ -1,0 +1,28 @@
+// swift-tools-version:5.7
+import PackageDescription
+
+let package = Package(
+    name: "SecretPlaceGame{{ argument.moduleName }}",
+    platforms: [
+        .iOS(.v16),
+    ],
+    products: [
+        .library(name: "SecretPlaceGame{{ argument.moduleName }}", targets: ["SecretPlaceGame{{ argument.moduleName }}"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/nullic/SourceryPlugin.git", branch: "main"),
+        .package(path: "../SecretPlaceGame-ios-common"),
+    ],
+    targets: [
+        .target(
+            name: "SecretPlaceGame{{ argument.moduleName }}",
+            dependencies: [
+                .product(name: "SecretPlaceGameCommon", package: "SecretPlaceGame-ios-common"),
+                .product(name: "SecretPlaceGameLogger", package: "SecretPlaceGame-ios-common"),
+            ],
+            plugins: [
+                .plugin(name: "SourceryPlugin", package: "SourceryPlugin"),
+            ]
+        ),
+    ]
+)

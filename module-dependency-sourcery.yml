@@ -1,0 +1,11 @@
+sources:
+  include:
+    - ./Packages/
+    - ./SecretPlaceGameApp/Assembly
+
+templates:
+  - ./Utils/ModuleDependencyImpl.stencil
+  - ./Utils/InlineGeneration.stencil
+  
+output:
+  ./SecretPlaceGameApp/Generated/
