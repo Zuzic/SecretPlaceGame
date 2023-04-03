@@ -1,2 +1,6 @@
-// MARK: - Placeholders
-"test" = "test";
+// MARK: - Menu
+"menu.play"     = "Play";
+"menu.setting"  = "Settings";
+"menu.about_us" = "About Us";
+
+"btn.back" = "Back";

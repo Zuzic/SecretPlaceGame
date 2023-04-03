@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11C7689429AFC9C500F2D6F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C7689329AFC9C500F2D6F7 /* Preview Assets.xcassets */; };
-		11C768A829AFCA1400F2D6F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C7689B29AFCA1400F2D6F7 /* ContentView.swift */; };
 		11C768A929AFCA1400F2D6F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C7689D29AFCA1400F2D6F7 /* Assets.xcassets */; };
 		11C768AA29AFCA1400F2D6F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C7689F29AFCA1400F2D6F7 /* Preview Assets.xcassets */; };
 		11C768AB29AFCA1400F2D6F7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C768A129AFCA1400F2D6F7 /* Logger.swift */; };
@@ -21,6 +19,18 @@
 		11C768B929AFCACA00F2D6F7 /* SecretPlaceGameClient in Frameworks */ = {isa = PBXBuildFile; productRef = 11C768B829AFCACA00F2D6F7 /* SecretPlaceGameClient */; };
 		11C768BB29AFCACA00F2D6F7 /* SecretPlaceGameCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 11C768BA29AFCACA00F2D6F7 /* SecretPlaceGameCommon */; };
 		11C768BD29AFCACA00F2D6F7 /* SecretPlaceGameLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 11C768BC29AFCACA00F2D6F7 /* SecretPlaceGameLogger */; };
+		11D8822A29DB296600AA5908 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8822929DB296600AA5908 /* MenuView.swift */; };
+		11D8822D29DB29A300AA5908 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8822C29DB29A300AA5908 /* MenuViewModel.swift */; };
+		11D8822F29DB2AF900AA5908 /* Injections.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8822E29DB2AF900AA5908 /* Injections.generated.swift */; };
+		11D8823229DB30EA00AA5908 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8823129DB30EA00AA5908 /* MenuButton.swift */; };
+		11D8823629DB388B00AA5908 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8823529DB388B00AA5908 /* AboutUsView.swift */; };
+		11D8823B29DB38BA00AA5908 /* AboutUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8823A29DB38BA00AA5908 /* AboutUsViewModel.swift */; };
+		11D8823F29DB3A7500AA5908 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8823E29DB3A7500AA5908 /* BackButton.swift */; };
+		11D8824229DB454100AA5908 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824129DB454100AA5908 /* NavigationBarModifier.swift */; };
+		11D8824629DB45D500AA5908 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824529DB45D500AA5908 /* SettingsView.swift */; };
+		11D8824829DB45E700AA5908 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824729DB45E700AA5908 /* SettingsViewModel.swift */; };
+		11D8824A29DB46B400AA5908 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824929DB46B400AA5908 /* LevelsView.swift */; };
+		11D8824C29DB46D500AA5908 /* LevelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824B29DB46D500AA5908 /* LevelsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +38,6 @@
 		11C7688829AFC9C400F2D6F7 /* SecretPlaceGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretPlaceGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C7689129AFC9C500F2D6F7 /* SecretPlaceGameApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecretPlaceGameApp.entitlements; sourceTree = "<group>"; };
 		11C7689329AFC9C500F2D6F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		11C7689B29AFCA1400F2D6F7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11C7689D29AFCA1400F2D6F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C7689F29AFCA1400F2D6F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11C768A129AFCA1400F2D6F7 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -40,6 +49,18 @@
 		11C768B229AFCA4700F2D6F7 /* SecretPlaceGame-ios-client */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SecretPlaceGame-ios-client"; path = "Packages/SecretPlaceGame-ios-client"; sourceTree = "<group>"; };
 		11C768B329AFCA5300F2D6F7 /* SecretPlaceGame-ios-common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SecretPlaceGame-ios-common"; path = "Packages/SecretPlaceGame-ios-common"; sourceTree = "<group>"; };
 		11C768B429AFCA5F00F2D6F7 /* SecretPlaceGame-ios-assets */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SecretPlaceGame-ios-assets"; path = "Packages/SecretPlaceGame-ios-assets"; sourceTree = "<group>"; };
+		11D8822929DB296600AA5908 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		11D8822C29DB29A300AA5908 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		11D8822E29DB2AF900AA5908 /* Injections.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injections.generated.swift; sourceTree = "<group>"; };
+		11D8823129DB30EA00AA5908 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		11D8823529DB388B00AA5908 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		11D8823A29DB38BA00AA5908 /* AboutUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewModel.swift; sourceTree = "<group>"; };
+		11D8823E29DB3A7500AA5908 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		11D8824129DB454100AA5908 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		11D8824529DB45D500AA5908 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		11D8824729DB45E700AA5908 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		11D8824929DB46B400AA5908 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
+		11D8824B29DB46D500AA5908 /* LevelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +99,12 @@
 		11C7688A29AFC9C400F2D6F7 /* SecretPlaceGameApp */ = {
 			isa = PBXGroup;
 			children = (
+				11D8824029DB453800AA5908 /* Modifiers */,
+				11D8823C29DB3A5C00AA5908 /* ComponentsUI */,
 				11B11B1E29AFD5500090D747 /* Info.plist */,
 				11C7689129AFC9C500F2D6F7 /* SecretPlaceGameApp.entitlements */,
 				11C768A729AFCA1400F2D6F7 /* SecretPlaceGameApp.swift */,
+				11D8822B29DB297300AA5908 /* ViewModel */,
 				11C768A029AFCA1400F2D6F7 /* Assembly */,
 				11C768A429AFCA1400F2D6F7 /* Generated */,
 				11C7689E29AFCA1400F2D6F7 /* Preview Content */,
@@ -102,7 +126,10 @@
 		11C7689A29AFCA1400F2D6F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				11C7689B29AFCA1400F2D6F7 /* ContentView.swift */,
+				11D8824429DB45BB00AA5908 /* Play */,
+				11D8823429DB387B00AA5908 /* Settings */,
+				11D8823329DB386F00AA5908 /* AboutUs */,
+				11D8823029DB30D900AA5908 /* Menu */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +163,7 @@
 		11C768A429AFCA1400F2D6F7 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				11D8822E29DB2AF900AA5908 /* Injections.generated.swift */,
 				11C768A529AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift */,
 				11C768A629AFCA1400F2D6F7 /* InlineGeneration.generated.swift */,
 			);
@@ -159,6 +187,106 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		11D8822B29DB297300AA5908 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11D8824329DB45AF00AA5908 /* Play */,
+				11D8823929DB38A900AA5908 /* Settings */,
+				11D8823829DB38A000AA5908 /* AboutUs */,
+				11D8823729DB389700AA5908 /* Menu */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11D8823029DB30D900AA5908 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				11D8822929DB296600AA5908 /* MenuView.swift */,
+				11D8823129DB30EA00AA5908 /* MenuButton.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		11D8823329DB386F00AA5908 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				11D8823529DB388B00AA5908 /* AboutUsView.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		11D8823429DB387B00AA5908 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				11D8824529DB45D500AA5908 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		11D8823729DB389700AA5908 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				11D8822C29DB29A300AA5908 /* MenuViewModel.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		11D8823829DB38A000AA5908 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				11D8823A29DB38BA00AA5908 /* AboutUsViewModel.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		11D8823929DB38A900AA5908 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				11D8824729DB45E700AA5908 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		11D8823C29DB3A5C00AA5908 /* ComponentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				11D8823D29DB3A6800AA5908 /* Buttons */,
+			);
+			path = ComponentsUI;
+			sourceTree = "<group>";
+		};
+		11D8823D29DB3A6800AA5908 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				11D8823E29DB3A7500AA5908 /* BackButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		11D8824029DB453800AA5908 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				11D8824129DB454100AA5908 /* NavigationBarModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		11D8824329DB45AF00AA5908 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				11D8824B29DB46D500AA5908 /* LevelsViewModel.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		11D8824429DB45BB00AA5908 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				11D8824929DB46B400AA5908 /* LevelsView.swift */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,6 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				11F70D6629B338C40034FC77 /* PBXTargetDependency */,
 			);
 			name = SecretPlaceGameApp;
 			packageProductDependencies = (
@@ -193,7 +322,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					11C7688729AFC9C400F2D6F7 = {
 						CreatedOnToolsVersion = 14.2;
@@ -227,7 +356,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C768AA29AFCA1400F2D6F7 /* Preview Assets.xcassets in Resources */,
-				11C7689429AFC9C500F2D6F7 /* Preview Assets.xcassets in Resources */,
 				11C768A929AFCA1400F2D6F7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,17 +367,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D8824629DB45D500AA5908 /* SettingsView.swift in Sources */,
 				11C768AD29AFCA1400F2D6F7 /* Injector.swift in Sources */,
+				11D8822A29DB296600AA5908 /* MenuView.swift in Sources */,
+				11D8823229DB30EA00AA5908 /* MenuButton.swift in Sources */,
 				11C768AE29AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift in Sources */,
-				11C768A829AFCA1400F2D6F7 /* ContentView.swift in Sources */,
+				11D8824C29DB46D500AA5908 /* LevelsViewModel.swift in Sources */,
+				11D8823B29DB38BA00AA5908 /* AboutUsViewModel.swift in Sources */,
 				11C768AB29AFCA1400F2D6F7 /* Logger.swift in Sources */,
+				11D8822F29DB2AF900AA5908 /* Injections.generated.swift in Sources */,
 				11C768B029AFCA1400F2D6F7 /* SecretPlaceGameApp.swift in Sources */,
+				11D8824229DB454100AA5908 /* NavigationBarModifier.swift in Sources */,
+				11D8824A29DB46B400AA5908 /* LevelsView.swift in Sources */,
+				11D8823629DB388B00AA5908 /* AboutUsView.swift in Sources */,
 				11C768AF29AFCA1400F2D6F7 /* InlineGeneration.generated.swift in Sources */,
 				11C768AC29AFCA1400F2D6F7 /* Settings.swift in Sources */,
+				11D8823F29DB3A7500AA5908 /* BackButton.swift in Sources */,
+				11D8822D29DB29A300AA5908 /* MenuViewModel.swift in Sources */,
+				11D8824829DB45E700AA5908 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11F70D6629B338C40034FC77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 11F70D6529B338C40034FC77 /* SourceryPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		11C7689529AFC9C500F2D6F7 /* Debug */ = {
@@ -285,6 +431,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -343,6 +490,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -369,6 +517,7 @@
 				CODE_SIGN_ENTITLEMENTS = SecretPlaceGameApp/SecretPlaceGameApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SecretPlaceGameApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Z47YDNJ7J9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -384,8 +533,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -411,6 +559,7 @@
 				CODE_SIGN_ENTITLEMENTS = SecretPlaceGameApp/SecretPlaceGameApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SecretPlaceGameApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Z47YDNJ7J9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -426,8 +575,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -495,6 +643,11 @@
 		11C768BC29AFCACA00F2D6F7 /* SecretPlaceGameLogger */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SecretPlaceGameLogger;
+		};
+		11F70D6529B338C40034FC77 /* SourceryPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11C768BE29AFCB1B00F2D6F7 /* XCRemoteSwiftPackageReference "SourceryPlugin" */;
+			productName = "plugin:SourceryPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

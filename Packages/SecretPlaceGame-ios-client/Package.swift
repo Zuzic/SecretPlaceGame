@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "SecretPlaceGameClient", targets: ["SecretPlaceGameClient"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Moya/Moya.git", from: "15.0.0"),
+        .package(url: "https://github.com/Moya/Moya.git", from: Version(15, 0, 0)),
         .package(url: "https://github.com/nullic/SourceryPlugin.git", branch: "main"),
         .package(path: "../SecretPlaceGame-ios-common"),
     ],

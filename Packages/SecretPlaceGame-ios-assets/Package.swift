@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.8
 import PackageDescription
 
 let package = Package(
@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "SecretPlaceGameAssets", targets: ["SecretPlaceGameAssets"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/SwiftGen/SwiftGenPlugin", from: "6.4.0"),
+        .package(url: "https://github.com/SwiftGen/SwiftGenPlugin", from: Version(6, 4, 0)),
     ],
     targets: [
         .target(name: "SecretPlaceGameAssets",
