@@ -46,19 +46,19 @@ extension View {
                 .hideNavigationBar()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
+        .overlay {
             VStack {
                 Spacer()
                 
                 HStack {
                     BackButton()
-
+                    
                     Spacer()
                 }
                 
                 Spacer()
                     .frame(height: 25)
             }
-        )
+        }
     }
 }

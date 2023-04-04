@@ -22,3 +22,15 @@ final class Injector {
         // sourcery:end
     }
 }
+
+// sourcery:inline:Injector.UnwrapModuleOutputs
+extension Injector {
+    // MARK: - ClientModuleOutput
+    // swiftlint::disable:next identifier_name
+    var clientModuleOutputLevelsRepository: SecretPlaceGameClient.LevelsRepository { clientModuleOutput.levelsRepository }
+    // swiftlint::disable:next identifier_name
+    var clientModuleOutputInitialRepository: SecretPlaceGameClient.InitialRepository { clientModuleOutput.initialRepository }
+
+}
+// sourcery:end
+

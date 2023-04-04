@@ -41,6 +41,9 @@ struct MenuView: View {
                     Spacer()
                 }
             }
+            .onAppear {
+                viewModel.onAppear()
+            }
         }
     }
     

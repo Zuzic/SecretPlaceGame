@@ -4,7 +4,11 @@
 
 import Foundation
 import Foundation
+import SecretPlaceGameClient
 import Foundation
+import SecretPlaceGameClient
+import Foundation
+import SecretPlaceGameClient
 import Foundation
 
 
@@ -22,12 +26,38 @@ extension Injector {
         AboutUsViewModelInjectionImpl(injector: self)
     }
 }
+// MARK: - LevelViewModelInjection
+
+final class LevelViewModelInjectionImpl: LevelViewModelInjection {
+    private let injector: Injector
+    fileprivate init(injector: Injector) {
+        self.injector = injector
+    }
+
+    var levelsRepository: LevelsRepository {
+        injector.clientModuleOutputLevelsRepository
+    }
+}
+
+extension Injector {
+    func build() -> LevelViewModelInjection {
+        LevelViewModelInjectionImpl(injector: self)
+    }
+}
 // MARK: - LevelsViewModelInjection
 
 final class LevelsViewModelInjectionImpl: LevelsViewModelInjection {
     private let injector: Injector
     fileprivate init(injector: Injector) {
         self.injector = injector
+    }
+
+    var levelsRepository: LevelsRepository {
+        injector.clientModuleOutputLevelsRepository
+    }
+
+    var levelViewModelInjection: LevelViewModelInjection {
+        LevelViewModelInjectionImpl(injector: injector)
     }
 }
 
@@ -54,6 +84,10 @@ final class MenuViewModelInjectionImpl: MenuViewModelInjection {
 
     var levelsViewModelInjection: LevelsViewModelInjection {
         LevelsViewModelInjectionImpl(injector: injector)
+    }
+
+    var initialRepository: InitialRepository {
+        injector.clientModuleOutputInitialRepository
     }
 }
 

@@ -13,7 +13,7 @@ final class Settings {
     @UserDefault(key: "isFirstLaunch", defaultValue: true)
     var isFirstLaunch: Bool
     
-    @BundleInfo(key: "REST_URL", defaultValue: { "https://zuzic.github.io/SecretPlaceGame" }())
+    @BundleInfo(key: "REST_URL", defaultValue: { "zuzic.github.io/SecretPlaceGame" }())
     var restEndpoint: String
 }
 

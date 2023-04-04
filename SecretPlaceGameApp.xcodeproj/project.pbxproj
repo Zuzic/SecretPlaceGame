@@ -13,7 +13,6 @@
 		11C768AC29AFCA1400F2D6F7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C768A229AFCA1400F2D6F7 /* Settings.swift */; };
 		11C768AD29AFCA1400F2D6F7 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C768A329AFCA1400F2D6F7 /* Injector.swift */; };
 		11C768AE29AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C768A529AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift */; };
-		11C768AF29AFCA1400F2D6F7 /* InlineGeneration.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C768A629AFCA1400F2D6F7 /* InlineGeneration.generated.swift */; };
 		11C768B029AFCA1400F2D6F7 /* SecretPlaceGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C768A729AFCA1400F2D6F7 /* SecretPlaceGameApp.swift */; };
 		11C768B729AFCACA00F2D6F7 /* SecretPlaceGameAssets in Frameworks */ = {isa = PBXBuildFile; productRef = 11C768B629AFCACA00F2D6F7 /* SecretPlaceGameAssets */; };
 		11C768B929AFCACA00F2D6F7 /* SecretPlaceGameClient in Frameworks */ = {isa = PBXBuildFile; productRef = 11C768B829AFCACA00F2D6F7 /* SecretPlaceGameClient */; };
@@ -31,6 +30,8 @@
 		11D8824829DB45E700AA5908 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824729DB45E700AA5908 /* SettingsViewModel.swift */; };
 		11D8824A29DB46B400AA5908 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824929DB46B400AA5908 /* LevelsView.swift */; };
 		11D8824C29DB46D500AA5908 /* LevelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8824B29DB46D500AA5908 /* LevelsViewModel.swift */; };
+		11DF0B4029DC869400828789 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF0B3F29DC869400828789 /* LevelView.swift */; };
+		11DF0B4229DC86AF00828789 /* LevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DF0B4129DC86AF00828789 /* LevelViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +45,6 @@
 		11C768A229AFCA1400F2D6F7 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		11C768A329AFCA1400F2D6F7 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		11C768A529AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleDependencyImpl.generated.swift; sourceTree = "<group>"; };
-		11C768A629AFCA1400F2D6F7 /* InlineGeneration.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlineGeneration.generated.swift; sourceTree = "<group>"; };
 		11C768A729AFCA1400F2D6F7 /* SecretPlaceGameApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretPlaceGameApp.swift; sourceTree = "<group>"; };
 		11C768B229AFCA4700F2D6F7 /* SecretPlaceGame-ios-client */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SecretPlaceGame-ios-client"; path = "Packages/SecretPlaceGame-ios-client"; sourceTree = "<group>"; };
 		11C768B329AFCA5300F2D6F7 /* SecretPlaceGame-ios-common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SecretPlaceGame-ios-common"; path = "Packages/SecretPlaceGame-ios-common"; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		11D8824729DB45E700AA5908 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		11D8824929DB46B400AA5908 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
 		11D8824B29DB46D500AA5908 /* LevelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsViewModel.swift; sourceTree = "<group>"; };
+		11DF0B3F29DC869400828789 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		11DF0B4129DC86AF00828789 /* LevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +167,6 @@
 			children = (
 				11D8822E29DB2AF900AA5908 /* Injections.generated.swift */,
 				11C768A529AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift */,
-				11C768A629AFCA1400F2D6F7 /* InlineGeneration.generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -275,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				11D8824B29DB46D500AA5908 /* LevelsViewModel.swift */,
+				11DF0B4129DC86AF00828789 /* LevelViewModel.swift */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -283,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				11D8824929DB46B400AA5908 /* LevelsView.swift */,
+				11DF0B3F29DC869400828789 /* LevelView.swift */,
 			);
 			path = Play;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				11D8823229DB30EA00AA5908 /* MenuButton.swift in Sources */,
 				11C768AE29AFCA1400F2D6F7 /* ModuleDependencyImpl.generated.swift in Sources */,
 				11D8824C29DB46D500AA5908 /* LevelsViewModel.swift in Sources */,
+				11DF0B4229DC86AF00828789 /* LevelViewModel.swift in Sources */,
 				11D8823B29DB38BA00AA5908 /* AboutUsViewModel.swift in Sources */,
 				11C768AB29AFCA1400F2D6F7 /* Logger.swift in Sources */,
 				11D8822F29DB2AF900AA5908 /* Injections.generated.swift in Sources */,
@@ -380,7 +384,7 @@
 				11D8824229DB454100AA5908 /* NavigationBarModifier.swift in Sources */,
 				11D8824A29DB46B400AA5908 /* LevelsView.swift in Sources */,
 				11D8823629DB388B00AA5908 /* AboutUsView.swift in Sources */,
-				11C768AF29AFCA1400F2D6F7 /* InlineGeneration.generated.swift in Sources */,
+				11DF0B4029DC869400828789 /* LevelView.swift in Sources */,
 				11C768AC29AFCA1400F2D6F7 /* Settings.swift in Sources */,
 				11D8823F29DB3A7500AA5908 /* BackButton.swift in Sources */,
 				11D8822D29DB29A300AA5908 /* MenuViewModel.swift in Sources */,

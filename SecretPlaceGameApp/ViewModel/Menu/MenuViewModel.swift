@@ -1,10 +1,13 @@
 import Foundation
+import SecretPlaceGameClient
 
 // sourcery: builder
 protocol MenuViewModelInjection {
     var aboutUsViewModelInjection: AboutUsViewModelInjection { get }
     var settingsViewModelInjection: SettingsViewModelInjection { get }
     var levelsViewModelInjection: LevelsViewModelInjection { get }
+    
+    var initialRepository: InitialRepository { get }
 }
 
 enum MenuType: String, Hashable {
@@ -35,5 +38,21 @@ final class MenuViewModel: ObservableObject {
     
     func onSelect(menuItem: MenuType) {
         self.menuItem = menuItem
+    }
+    
+    func onAppear() {
+        loadData()
+    }
+}
+
+private extension MenuViewModel {
+    func loadData() {
+        Task {
+            do {
+                try await injection.initialRepository.loadInitialData()
+            } catch {
+                debugPrint("error \(error)")
+            }
+        }
     }
 }

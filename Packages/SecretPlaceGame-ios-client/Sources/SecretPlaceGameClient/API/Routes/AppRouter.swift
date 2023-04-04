@@ -2,7 +2,7 @@ import Foundation
 import Moya
 
 enum AppRouter {
-    case data(LoginRequestModel)
+    case data
 }
 
 extension AppRouter: TargetType {
@@ -12,8 +12,8 @@ extension AppRouter: TargetType {
 
     var task: Task {
         switch self {
-        case .data(let loginModel):
-            return .requestParameters(parameters: loginModel.dict, encoding: URLEncoding.httpBody)
+        case .data:
+            return .requestPlain
         }
     }
 
