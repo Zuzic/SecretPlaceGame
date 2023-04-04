@@ -2,15 +2,24 @@ import SwiftUI
 import SecretPlaceGameAssets
 
 struct MenuButton: View {
+    enum MenuButtonStyle {
+        case large, medium
+    }
+    
     private struct Constants {
-        static var buttonSize: CGSize = .init(width: 170, height: 50)
+        static var mediumButtonSize: CGSize = .init(width: 170, height: 50)
+        static var largeButtonSize: CGSize = .init(width: 250, height: 60)
     }
     
     private let menu: MenuType
+    private let sizeStyle: MenuButtonStyle
     private var action: ((MenuType) -> Void)?
     
     private var size: CGSize {
-        return Constants.buttonSize
+        switch sizeStyle {
+        case .large: return Constants.largeButtonSize
+        case .medium: return Constants.mediumButtonSize
+        }
     }
     
     var body: some View {
@@ -37,9 +46,12 @@ struct MenuButton: View {
         }
     }
     
-    init(menu: MenuType, action: @escaping (MenuType) -> Void) {
+    init(menu: MenuType,
+         sizeStyle: MenuButton.MenuButtonStyle = .medium,
+         action: @escaping (MenuType) -> Void) {
         self.action = action
         self.menu = menu
+        self.sizeStyle = sizeStyle
     }
 }
 

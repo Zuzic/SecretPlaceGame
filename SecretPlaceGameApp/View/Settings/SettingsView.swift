@@ -1,4 +1,5 @@
 import SwiftUI
+import SecretPlaceGameAssets
 
 struct SettingsView: View {
     @ObservedObject private var viewModel: SettingsViewModel
@@ -8,6 +9,7 @@ struct SettingsView: View {
             Text("Settings")
         }
         .backButtonModifier()
+        .background(Asset.Icons.backgroundImage.swiftUIImage)
     }
     
     init(viewModel: SettingsViewModel) {

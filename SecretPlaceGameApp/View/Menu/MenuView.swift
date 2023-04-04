@@ -16,12 +16,14 @@ struct MenuView: View {
                     ForEach(viewModel.menuItems,
                             id: \.id) { item in
                         
-                        MenuButton(menu: item) { item in
+                        MenuButton(menu: item,
+                                   sizeStyle: item == .play ? .large : .medium) { item in
                             path.append(item)
                         }
                         .background(
                             NavigationLink("", value: item)
                         )
+                        .padding(.vertical, 10)
                     }
                     
                     Spacer()
@@ -30,6 +32,14 @@ struct MenuView: View {
             }
             .navigationDestination(for: MenuType.self) { item in
                 openEmbeddedView(at: item)
+            }
+            .background(Asset.Icons.backgroundImage.swiftUIImage)
+            .overlay {
+                HStack {
+                    Asset.Icons.baseBox.swiftUIImage
+                    
+                    Spacer()
+                }
             }
         }
     }
